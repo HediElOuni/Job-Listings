@@ -1,0 +1,215 @@
+* {
+    box-sizing: border-box;
+    font-family: "League Spartan", sans-serif;
+    font-size: 16px;
+}
+body {
+    margin: 0;
+    background-color: hsl(180, 52%, 96%);
+}
+header {
+    width: 100%;
+    height: 150px;
+    background-color: #5DA5A4;
+    background-image: url(./images/bg-header-desktop.svg);
+}
+main {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 75px 0;
+}
+.filters-cont {
+    display: none;
+    width: 77%;
+    position: relative;
+    bottom: 38px;
+    padding: 15px 50px;
+    border-radius: 5px;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    box-shadow: 0px 10px 5px #e0e0e0;
+}
+.filters {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.wrapper-catg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 5px;
+    margin: 2px 0;
+}
+.clear-btn {
+    color: #fff;
+    background-color: #5DA5A4;
+    font-weight: 900;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+    border: none;
+    height: 30.2px;
+    padding: 0 7px;
+}
+.clear-btn:hover {
+    cursor: pointer;
+    background-color: hsl(180, 14%, 20%);
+}
+#clear {
+    color: #5DA5A4;
+}
+#clear:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}
+.unit {
+    width: 77%;
+    height: 150px;
+    margin-bottom: 20px;
+    padding: 0;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    box-shadow: 0px 10px 10px #e0e0e0;
+}
+.unit-ftr {
+    border-left: 5px solid #5DA5A4;
+}
+img {
+    height: 57%;
+    border-radius: 50%;
+    padding: 0 20px;
+}
+.unit-c {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 82.5%;
+    height: 57%;
+}
+.desc {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+h3, span {
+    font-weight: 700;
+}
+.n-tag {
+    display: flex;
+    align-items: center;
+}
+.name {
+    color: #5DA5A4
+}
+.tag {
+    color: #fff;
+    padding: 5px 10px 3px 10px;
+    border-radius: 20px;
+    font-size: 14px;
+}
+.new {
+    margin: 0 15px;
+    background-color: #5DA5A4;
+}
+.ftr {
+    background-color: hsl(180, 14%, 20%);
+}
+h3 {
+    color: hsl(180, 14%, 20%);
+    font-size: 22px;
+    margin: 0;
+    transition: 0.3s;
+}
+h3:hover {
+    cursor: pointer;
+    color: #5DA5A4;
+}
+p {
+    color: #888;
+    font-weight: 500;
+    margin: 0;
+}
+hr {
+    display: none;
+}
+.catgs {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.catg {
+    color: #5DA5A4;
+    background-color: #EDF8F5;
+    padding: 7px 7px 4px 7px;
+    border-radius: 4px;
+    margin: 5px 7px;
+}
+.unit .catg:hover {
+    cursor: pointer;
+    color: #fff;
+    background-color: #5DA5A4;
+}
+.catg-slc {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    margin-right: 0;
+}
+@media screen and (max-width: 705px) {
+    header {
+        background-image: url(./images/bg-header-mobile.svg);
+    }
+    main {
+        padding: 60px 0 0 0;
+    }
+    #clear {
+        padding-right: 12px;
+    }
+    .unit {
+        width: 90%;
+        height: fit-content;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        margin-bottom: 40px;
+    }
+    img {
+        height: 46px;
+        position: relative;
+        bottom: 23px;
+        margin-left: 5px;
+    }
+    .unit-c {
+        width: 100%;
+        flex-direction: column;
+        padding-left: 25px;
+        align-items: flex-start;
+        position: relative;
+        bottom: 17px;
+    }
+    h3 {
+        font-size: 18px;
+        padding: 15px 0;
+    }
+    hr {
+        display: block;
+        color: #DDD;
+        width: calc(100% - 25px);
+        margin: 15px 0;
+    }
+    .catgs {
+        justify-content: flex-start;
+        align-items: flex-start;
+        position: relative;
+        left: -7px;
+    }
+}
